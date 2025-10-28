@@ -1,0 +1,216 @@
+<html>
+<head>
+<title>Quiz</title>
+<meta charset = "UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<style>
+h1 {
+ text-align: center;
+}
+.question1 {
+    font-size: 19px;
+    font-weight: 480;
+    font-family: Roboto;
+}
+#txt1, #txt2, #txt3, #txt4, #txt5, #txt6, #txt7, #txt8, #txt9, #txt10, #txt11, #txt12, #txt13, #txt14, #txt15{
+    width: 550px;
+}
+body{
+    background-color: #f0f0f0;
+}
+.ball {
+    background-color: rgb(214, 214, 69);
+}
+</style>
+</head>
+<body>
+<h1>English Quiz</h1>
+<p class = "question1">1. What is the passive voice of "The committee approved the proposal."<br>
+<input type = "text" placeholder = "Your answer here..." id = "txt1"></p>
+<p class = "question1">
+2. What is the passive voice of "You will have to look after the child."<br>
+<input type = "text" placeholder = "Your answer here..." id = "txt2"></p>
+
+<p class = "question1">
+3. What is the passive voice of "The detective suspected that the butler had committed the crime."<br>
+<input type = "text" placeholder = "Your answer here..." id = "txt3"></p>
+
+<p class = "question1">
+4. What is the passive voice of "We expect that the board will approve the new policy."<br>
+<input type = "text" placeholder = "Your answer here..." id = "txt4"></p>
+
+<p class = "question1">
+5. What is the passive voice of "The management looked into the employees complaints."<br>
+<input type = "text" placeholder = "Your answer here..." id = "txt5"></p>
+
+<p class = "question1">
+6. What is the passive voice of "The parents looked after the children well."<br>
+<input type = "text" placeholder = "Your answer here..." id = "txt6"></p>
+
+<p class = "question1">
+7. What is the passive voice of "They laughed at the speakers last remark."<br>
+<input type = "text" placeholder = "Your answer here..." id = "txt7"></p>
+
+<p class = "question1">
+8. What is the passive voice of "The teacher gave the students a difficult assignment."<br>
+<input type = "text" placeholder = "Your answer here..." id = "txt8"></p>
+
+<p class = "question1">
+9. What is the passive voice of "The teacher gave the students a difficult assignment."<br>
+<input type = "text" placeholder = "Your answer here..." id = "txt9"></p>
+
+<p class = "question1">
+10. What is the passive voice of "Someone has sent her a large bouquet of roses."<br>
+<input type = "text" placeholder = "Your answer here..." id = "txt10"></p>
+
+<p class = "question1">
+11. What is the passive voice of "She dislikes people interrupting her."<br>
+<input type = "text" placeholder = "Your answer here..." id = "txt11"></p>
+
+<p class = "question1">
+12. What is the passive voice of "I remember my father taking me to the zoo."<br>
+<input type = "text" placeholder = "Your answer here..." id = "txt12"></p>
+
+<p class = "question1">
+13. What is the passive voice of "The manager asked me to wait for him."<br>
+<input type = "text" placeholder = "Your answer here..." id = "txt13"></p>
+
+<p class = "question1">
+14. What is the passive voice of "He wants someone to elect him president."<br>
+<input type = "text" placeholder = "Your answer here..." id = "txt14"></p>
+
+<p class = "question1">
+15. What is the passive voice of "The committee awarded the deserving students a scholarship before the results were out."<br>
+<input type = "text" placeholder = "Your answer here..." id = "txt15"></p>
+<button onclick = "Submit()" id = "button3">Submit</button><BR><BR>
+<script>
+    let score;
+    let value3;
+    let man;
+    let mar;
+    let clickcount;
+   function Submit() {
+    let input1 = document.getElementById('txt1').value;
+    let input2 = document.getElementById('txt2').value;
+    let input3 = document.getElementById('txt3').value;
+    let input4 = document.getElementById('txt4').value;
+    let input5 = document.getElementById('txt5').value;
+    let input6 = document.getElementById('txt6').value;
+    let input7 = document.getElementById('txt7').value;
+    let input8 = document.getElementById('txt8').value;
+    let input9 = document.getElementById('txt9').value;
+    let input10 = document.getElementById('txt10').value;
+    let input11 = document.getElementById('txt11').value;
+    let input12 = document.getElementById('txt12').value;
+    let input13 = document.getElementById('txt13').value;
+    let input14= document.getElementById('txt14').value;
+    let input15 = document.getElementById('txt15').value;
+
+    if (input1 === 'The proposal was approved by the committee' || input1 === 'The proposal was approved by the committee.') {
+       score.normal = score.normal + 1;
+    } 
+    if (input2 === 'The child will have to be looked after by you' || input2 === 'The child will have to be looked after by you.') {
+        score.normal = score.normal + 1;
+    } 
+    if (input3 === 'It was suspected by the detective that the crime had been committed by the butler' || input3 === 'It was suspected by the detective that the crime had been committed by the butler.') {
+         score.normal = score.normal + 1;
+    } 
+    if (input4 === 'The new policy is expected to be approved by the board' || input4 === 'The new policy is expected to be approved by the board.') {
+         score.normal = score.normal + 1;
+    } 
+    if (input5 === 'The employees complaints were looked into by the management' || input5 === 'The employees complaints were looked into by the management.') {
+        score.normal = score.normal + 1;
+    } 
+    if (input6 === 'The children were well looked after by the parents' || input6 === 'The children were well looked after by the parents.') {
+         score.normal = score.normal + 1;
+    } 
+    if (input7 === 'The speakers last remark was laughed at by them' || input7 === 'The speakers last remark was laughed at by them.') {
+         score.normal = score.normal + 1;
+    }
+    if (input8 === 'The students were given a difficult assignment by the teacher' || input8 === 'The students were given a difficult assignment by the teacher.') {
+        score.normal = score.normal + 1;
+    } 
+    if (input9 === 'The students were given a difficult assignment by the teacher' || input9 === 'The students were given a difficult assignment by the teacher.') {
+         score.normal = score.normal + 1;
+    } 
+    if (input10 === 'She has been sent a large bouquet of roses' || input10 === 'She has been sent a large bouquet of roses.') {
+        score.normal = score.normal + 1;
+    } 
+    if (input11 === 'She dislikes being interrupted' || input11 === 'She dislikes being interrupted.') {
+         score.normal = score.normal + 1;
+    } 
+    if (input12 === 'I remember being taken to the zoo by my father' || input12 === 'I remember being taken to the zoo by my father.') {
+         score.normal = score.normal + 1;
+    } 
+     if (input13 === 'I was asked by the manager to wait for him' || input13 === 'I was asked by the manager to wait for him.') {
+       score.normal = score.normal + 1;
+    } 
+    if (input14 === 'He wants to be elected president' || input14 === 'He wants to be elected president.') {
+         score.normal = score.normal + 1;
+    } 
+    if (input15 === 'The deserving students were awarded a scholarship by the committee before the results were out' || input15 === 'The deserving students were awarded a scholarship by the committee before the results were out.') {
+        score.normal = score.normal + 1;
+    } 
+    
+    const br = document.createElement('br');
+    const hr = document.createElement('hr');
+    hr.style = 'margin-top: 30px;'
+    document.body.appendChild(hr);
+    document.body.appendChild(br);
+      const p = document.createElement('p');
+    p.id = 'hello';
+    p.style = "font-family: Roboto; font-size: 19px;"
+    p.innerHTML = "You scored " +  score.normal + " out of 15"
+    document.body.appendChild(p);
+    const manager = document.createElement('p');
+    manager.id = 'hell';
+    manager.style = "font-family: Roboto; font-size: 19px;"
+    document.body.appendChild(manager);
+    const pi = document.createElement('p');
+    pi.id = 'boy';
+    pi.innerHTML = '👎';
+    pi.style = "font-size: 30px; font-family: Roboto; font-size: 19px;";
+    document.body.appendChild(pi);
+    if (score.normal < 5) {
+        hello.style.color = 'red';
+        hell.innerHTML = 'You scored terrible marks';
+        hell.style.color = 'red';
+        pi.innerHTML = 'Remarks: 👎';
+    }
+    if (score.normal >= 5 && score.normal <10) {
+        hello.style = 'color: rgb(190, 200, 0); font-size: 19px; font-family: Roboto;';
+        hell.innerHTML = 'You scored moderate marks!';
+        hell.style = 'color: rgb(190, 200, 0); font-size: 19px; font-family: Roboto;';
+        pi.innerHTML = 'Remarks: 🤔';
+    }
+    if (score.normal >= 10 && score.normal <= 20) {
+        hello.style.color =  'green';
+        hell.innerHTML = 'You scored nice marks!';
+        hell.style.color = 'green';
+        pi.innerHTML = 'Remarks: 👍';
+    }
+
+   
+    let clickCount = 0;
+
+    // Ensure the element exists before attaching the event
+    const btn = document.getElementById('button3');
+    if (btn) {
+      btn.addEventListener('click', function () {
+        clickCount++;
+
+        if (clickCount > 0) {
+          const x = alert('Button cannot be pressed for more than one time.');
+           
+        }
+      });
+    } 
+}
+ score = {
+ normal: 0 
+ }
+</script>
+</html>
+</body>
